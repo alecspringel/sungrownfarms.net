@@ -37,11 +37,11 @@ a {
 }
 
 /* ===================== Flex ===================== */
-.flx-row {
+.flex-row {
   display: flex;
 }
 
-.flx-col {
+.flex-col {
   display: flex;
   flex-direction: column;
 }
