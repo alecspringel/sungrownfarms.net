@@ -5,7 +5,7 @@ import SungrownLogo from '../images/sungrown-logo.svg';
 
 const Navigation = () => (
   <NavigationBar className="flex-row align-c">
-    <NavigationContent className="m-auto flex-row align-c">
+    <NavigationContent className="m-auto flex-row align-c p-l20 p-r20">
       <img src={SungrownLogo} alt="Sungrown Farms logo" style={{ height: 36 }} />
       <ul>
         <NavLink to="/#">Home</NavLink>

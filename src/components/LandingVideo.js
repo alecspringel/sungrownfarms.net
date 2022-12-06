@@ -12,13 +12,15 @@ const LandingVideo = () => (
     </Video>
     <TextWrapper className="flex-col jstfy-e">
       <TextContainer className="max-width m-auto">
-        <h1 className="text-regular">Cannabis Land Leases and Licensure</h1>
-        <img src={LocationSVG} className="m-t20 m-b20" alt="location icon titled: Olympia, Washington" />
-        <h5 className="text-regular" style={{ maxWidth: 500 }}>
-          Sungrown Farms offers turnkey leases for cannabis growers and processors in Mason County,
-          Washington. Our cannabis business park offers a space where like-minded businesses
-          can grow together.
-        </h5>
+        <FloatingContent>
+          <h1 className="text-regular">Cannabis Land Leases and Licensing</h1>
+          <img src={LocationSVG} className="m-t20 m-b20" alt="location icon titled: Olympia, Washington" />
+          <h5 className="text-regular" style={{ maxWidth: 500 }}>
+            Sungrown Farms offers turnkey leases for cannabis growers and processors in
+            Mason County, Washington. Our cannabis business park offers a space where
+            like-minded businesses can grow together.
+          </h5>
+        </FloatingContent>
       </TextContainer>
     </TextWrapper>
   </VideoContainer>
@@ -59,8 +61,12 @@ const TextWrapper = styled.div`
 
 const TextContainer = styled.div`
   max-width: 1440px;
+  width: 100%;
   color: #fff;
   font-weight: 400;
+`;
+
+const FloatingContent = styled.div`
   margin-bottom: 180px;
   margin-left: 120px;
 `;
