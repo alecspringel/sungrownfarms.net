@@ -8,10 +8,10 @@ const Navigation = () => (
     <NavigationContent className="m-auto flex-row align-c">
       <img src={SungrownLogo} alt="Sungrown Farms logo" style={{ height: 36 }} />
       <ul>
-        <Link to="/#Home">Home</Link>
-        <Link to="/#Home">About</Link>
-        <Link to="/#Home">FAQ</Link>
-        <Link to="/#Home">Contact</Link>
+        <NavLink to="/#">Home</NavLink>
+        <NavLink to="/#About">About</NavLink>
+        <NavLink to="/#FAQ">FAQ</NavLink>
+        <NavLink to="/#Contact">Contact</NavLink>
       </ul>
     </NavigationContent>
   </NavigationBar>
@@ -32,4 +32,10 @@ const NavigationContent = styled.div`
   max-width: 1440px;
   width: 100%;
   justify-content: space-between;
+`;
+
+const NavLink = styled(Link)`
+  font-family: "Aleo";
+  color: #fff;
+  padding: 0 20px;
 `;

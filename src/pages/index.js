@@ -1,8 +1,9 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import SEO from '../components/seo';
-import '../components/index.css';
 import LandingVideo from '../components/LandingVideo';
+import '../index.css';
+import '../fonts.css';
 
 export default function Home() {
   return (

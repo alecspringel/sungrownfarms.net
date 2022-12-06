@@ -23,6 +23,10 @@ a {
   color: var(--primary);
 }
 
+.max-width {
+  max-width: 1440px;
+}
+
 /* ===================== Text ===================== */
 .text-center {
   text-align: center;
@@ -34,6 +38,47 @@ a {
 
 .text-left {
   text-align: left;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Aleo';
+  margin: 0;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Roboto';
 }
 
 /* ===================== Flex ===================== */
@@ -72,7 +117,7 @@ a {
 
 /* ===================== Margins ===================== */
 .m-auto {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .m-t4 {
