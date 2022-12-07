@@ -1,6 +1,7 @@
 :root {
   --background: #fff;
-  --primary: #274cc4;
+  --primary: #5D8F51;
+  --text-color: #4A453D;
 }
 
 * {
@@ -16,6 +17,7 @@ html,
 body {
   margin: 0;
   scroll-behavior: smooth;
+  color: var(--text-color);
 }
 
 a {
@@ -50,6 +52,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Aleo';
+  font-weight: 400;
   margin: 0;
 }
 
@@ -79,6 +82,9 @@ h6 {
 
 p {
   font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 115%;
+  margin: 0;
 }
 
 /* ===================== Flex ===================== */

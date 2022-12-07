@@ -1,9 +1,14 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
-import SEO from '../components/seo';
-import LandingVideo from '../components/LandingVideo';
+import Navigation from '../sections/Navigation';
+import SEO from '../sections/seo';
+import LandingVideo from '../sections/LandingVideo';
 import '../index.css';
 import '../fonts.css';
+import LandLeasesForYourBusiness from '../sections/LandLeasesForYourBusiness';
+import TurnkeyLeases from '../sections/TurnkeyLeases';
+import OurPartnershipWithFarms from '../sections/OurPartnershipWithFarms';
+import FAQ from '../sections/FAQ';
+import ContactAndLocation from '../sections/ContactAndLocation';
 
 export default function Home() {
   return (
@@ -11,7 +16,11 @@ export default function Home() {
       <SEO />
       <Navigation />
       <LandingVideo />
-      <p>Hello World</p>
+      <LandLeasesForYourBusiness />
+      <TurnkeyLeases />
+      <OurPartnershipWithFarms />
+      <FAQ />
+      <ContactAndLocation />
     </>
   );
 }
