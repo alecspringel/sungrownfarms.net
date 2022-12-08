@@ -5,9 +5,10 @@ import WaterTowerJPG from '../images/water-tower.jpg';
 import MountainsJPG from '../images/mountains.jpg';
 import IndoorFarmJPG from '../images/indoor-farm.jpg';
 import SungrownLotJPG from '../images/sungrown-lot.jpg';
+import { MEDIA_QUERY } from '../constants';
 
 const TurnkeyLeases = () => (
-  <section className="max-width m-auto text-center" style={{ paddingBottom: 200 }}>
+  <section className="max-width m-auto text-center mw-padding" style={{ paddingBottom: 200 }}>
     <h2>Turnkey Leases for Cannabis</h2>
     <p style={{ maxWidth: 1000 }} className="m-t20 m-b20 m-auto">
       Our park offers uparalleled, turnkey leases with clean water, power,
@@ -64,11 +65,15 @@ export default TurnkeyLeases;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-row: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   color: #fff;
+
+  ${MEDIA_QUERY.TABLET} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ImageWithText = styled.div`

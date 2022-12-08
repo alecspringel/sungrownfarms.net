@@ -4,7 +4,7 @@
   "description": "description",
   "author": "Alec Springel <alecspringel@gmail.com>",
   "scripts": {
-    "start": "gatsby develop",
+    "dev": "gatsby develop",
     "build": "gatsby build",
     "deploy": "npm run build && gatsby-plugin-s3 deploy",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -29,6 +29,7 @@
     "gatsby-plugin-styled-components": "^3.10.0",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-sharp": "^2.12.0",
+    "google-map-react": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

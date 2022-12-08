@@ -25,8 +25,18 @@ a {
   color: var(--primary);
 }
 
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
 .max-width {
   max-width: 1440px;
+}
+
+.mw-padding {
+  padding: 0 30px;
 }
 
 /* ===================== Text ===================== */
