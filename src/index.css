@@ -2,6 +2,8 @@
   --background: #fff;
   --primary: #5D8F51;
   --text-color: #4A453D;
+  --max-width-padding: 0 30px;
+  --section-padding: 200px;
 }
 
 * {
@@ -36,7 +38,15 @@ button {
 }
 
 .mw-padding {
-  padding: 0 30px;
+  padding: var(--max-width-padding);
+}
+
+.section-p-t {
+  padding-top: var(--section-padding);
+}
+
+.section-p-b {
+  padding-bottom: var(--section-padding);
 }
 
 /* ===================== Text ===================== */

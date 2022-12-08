@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
+import { MEDIA_QUERY } from '../constants';
 import HandlingPlantsJPG from '../images/handling-plants.jpg';
 import LeafPNG from '../images/leaf.png';
 
 const OurPartnershipWithFarms = () => (
-  <section className="max-width m-auto flex-row align-c" style={{ paddingBottom: 200 }}>
+  <Section className="max-width m-auto flex-row align-c mw-padding section-p-b">
     <SplitContent>
       <h3>Our Partnership with Farms</h3>
       <p className="m-t20 m-b20">
@@ -18,21 +19,68 @@ const OurPartnershipWithFarms = () => (
       </p>
       <Button to="/#" className="m-t4">Contact us for Availability</Button>
     </SplitContent>
-    <SplitContent style={{ marginLeft: 50 }}>
-      <img src={HandlingPlantsJPG} alt="person handling cannabis plants" width="100%" />
+    <SplitContent>
+      <Image src={HandlingPlantsJPG} alt="person handling cannabis plants" />
       <RoundedPhoto>
-        <img src={LeafPNG} alt="cannabis leaf" style={{ height: 109 }} />
+        <LeafImage src={LeafPNG} alt="cannabis leaf" />
       </RoundedPhoto>
     </SplitContent>
-  </section>
+  </Section>
 );
 
 export default OurPartnershipWithFarms;
 
 const SplitContent = styled.div`
   width: 50%;
-  padding: 0 16px;
   position: relative;
+`;
+
+const Image = styled.img`
+  width: 100%;
+`;
+
+const LeafImage = styled.img`
+ height: 109px;
+`;
+
+const Section = styled.section`
+  overflow: hidden;
+
+  & ${SplitContent}:nth-child(1) {
+    margin-right: 32px;
+  }
+
+  ${MEDIA_QUERY.SMALL_LAPTOPS} {
+    align-items: stretch;
+    & ${Image} {
+      object-fit: cover;
+      object-position: left;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  ${MEDIA_QUERY.TABLET} {
+    flex-direction: column-reverse;
+
+    & ${SplitContent} {
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
+    }
+    & ${SplitContent}:nth-child(1) {
+      margin-top: 80px;
+      margin-left: 0;
+    }
+    & ${Image} {
+      width: 100%;
+    }
+    & ${LeafImage} {
+      height: 83px;
+      margin-left: 32px;
+      margin-bottom: 31px;
+    }
+  }
 `;
 
 const RoundedPhoto = styled.div`

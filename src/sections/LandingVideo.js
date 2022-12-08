@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { MEDIA_QUERY } from '../constants';
 import DroneVideo from '../images/drone-video.mp4';
 import LocationSVG from '../images/landing-location.svg';
 
@@ -28,6 +29,11 @@ const LandingVideo = () => (
 
 export default LandingVideo;
 
+const FloatingContent = styled.div`
+  margin-bottom: 180px;
+  margin-left: 120px;
+`;
+
 const VideoContainer = styled.section`
   height: 100vh;
   max-height: 1440px;
@@ -42,6 +48,14 @@ const VideoContainer = styled.section`
     right: 0;
     bottom: 0;
     left: 0;
+  }
+
+  ${MEDIA_QUERY.TABLET} {
+    & ${FloatingContent} {
+      margin: 0;
+      padding: var(--max-width-padding);
+      padding-bottom: 60px;
+    }
   }
 `;
 
@@ -64,9 +78,4 @@ const TextContainer = styled.div`
   width: 100%;
   color: #fff;
   font-weight: 400;
-`;
-
-const FloatingContent = styled.div`
-  margin-bottom: 180px;
-  margin-left: 120px;
 `;

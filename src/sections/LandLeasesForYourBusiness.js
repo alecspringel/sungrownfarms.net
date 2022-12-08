@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import SungrownJPG from '../images/sungrown-drone.jpg';
 import CannabisJPG from '../images/cannabis-stalks.jpg';
 import Button from '../components/Button';
+import { MEDIA_QUERY } from '../constants';
 
 const LandLeasesForYourBusiness = () => (
-  <section className="max-width m-auto flex-row align-c" style={{ padding: '200px 0' }}>
+  <Section className="max-width mw-padding m-auto flex-row align-c section-p-t section-p-b">
     <SplitContent>
       <TitleDecoration>Land Leases for Your Business</TitleDecoration>
       <div style={{ marginLeft: 25 }}>
@@ -21,11 +22,11 @@ const LandLeasesForYourBusiness = () => (
         <Button to="/#" className="m-t4">View Available Licenses</Button>
       </div>
     </SplitContent>
-    <SplitContent style={{ marginLeft: 50 }}>
-      <img src={SungrownJPG} alt="drone view of Sungrown Farms" width="100%" />
+    <SplitContent>
+      <Image src={SungrownJPG} alt="drone view of Sungrown Farms" />
       <RoundedPhoto src={CannabisJPG} alt="cannabis plants" />
     </SplitContent>
-  </section>
+  </Section>
 );
 
 export default LandLeasesForYourBusiness;
@@ -34,6 +35,45 @@ const SplitContent = styled.div`
   width: 50%;
   padding: 0 16px;
   position: relative;
+`;
+
+const Image = styled.img`
+  height: 100%;
+`;
+
+const Section = styled.section`
+  overflow: hidden;
+
+  & ${SplitContent}:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  ${MEDIA_QUERY.SMALL_LAPTOPS} {
+    align-items: stretch;
+    & ${Image} {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  ${MEDIA_QUERY.TABLET} {
+    flex-direction: column-reverse;
+
+    & ${SplitContent} {
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
+    }
+    & ${SplitContent}:nth-child(1) {
+      margin-top: 80px;
+    }
+    & ${SplitContent}:nth-child(2) {
+      margin-left: 0;
+    }
+    & ${Image} {
+      width: 100%;
+    }
+  }
 `;
 
 const RoundedPhoto = styled.img`
