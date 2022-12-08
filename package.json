@@ -10,7 +10,9 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy-dev": "gatsby build && gatsby-plugin-s3 deploy",
+    "deploy-prod": "DEPLOY_ENV=prod gatsby build && gatsby-plugin-s3 deploy"
   },
   "repository": {
     "type": "git",
