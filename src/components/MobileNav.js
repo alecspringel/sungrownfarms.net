@@ -35,7 +35,7 @@ export default MobileNav;
 
 const MenuIcon = styled.img`
   height: 30px;
-  opacity: 0.7;
+  vertical-align: middle;
 `;
 
 const Wrapper = styled.div`
