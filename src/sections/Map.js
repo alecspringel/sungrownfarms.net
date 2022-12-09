@@ -10,34 +10,43 @@ const Map = () => {
     zoom: 11,
   };
   return (
-    <div style={{
-      width: '100%', height: 600, position: 'relative', maxHeight: '90vh',
-    }}
-    >
-      {/* <QuestionBox id="legend">
+    <>
+      <div style={{
+        width: '100%', height: 600, position: 'relative', maxHeight: '90vh',
+      }}
+      >
+        {/* <QuestionBox id="legend">
         <p style={{ fontSize: 18 }}>Where is your exact location?</p>
       </QuestionBox> */}
-      <GoogleMapReact
-        yesIWantToUseGoogleMapApiInternals
-        bootstrapURLKeys={{ key: 'AIzaSyCSDqYHgioyB18I2lCzlGX7XO8JtLhGuk8' }}
-        defaultCenter={sungrownLocation.center}
-        defaultZoom={sungrownLocation.zoom}
-        onGoogleApiLoaded={({ map, maps }) => {
-          map.controls[maps.ControlPosition.TOP_LEFT].push(document.getElementById('legend'));
-          // eslint-disable-next-line no-new
-          new maps.Circle({
-            strokeColor: '#5D8F51',
-            strokeOpacity: 0.8,
-            strokeWeight: 2,
-            fillColor: '#5D8F51',
-            fillOpacity: 0.3,
-            map,
-            center: { lat: sungrownLocation.center.lat, lng: sungrownLocation.center.lng },
-            radius: 10000,
-          });
-        }}
-      />
-    </div>
+        <GoogleMapReact
+          yesIWantToUseGoogleMapApiInternals
+          bootstrapURLKeys={{ key: 'AIzaSyCSDqYHgioyB18I2lCzlGX7XO8JtLhGuk8' }}
+          defaultCenter={sungrownLocation.center}
+          defaultZoom={sungrownLocation.zoom}
+          onGoogleApiLoaded={({ map, maps }) => {
+            map.controls[maps.ControlPosition.TOP_LEFT].push(document.getElementById('legend'));
+            // eslint-disable-next-line no-new
+            new maps.Circle({
+              strokeColor: '#5D8F51',
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              fillColor: '#5D8F51',
+              fillOpacity: 0.3,
+              map,
+              center: { lat: sungrownLocation.center.lat, lng: sungrownLocation.center.lng },
+              radius: 10000,
+            });
+          }}
+        />
+      </div>
+      {/* <div className="text-center">
+        <p style={{ maxWidth: 800, fontSize: 14, color: '#8a867f' }} className="m-t20 m-auto">
+          Security is our highest priority at Sungrown Farms. The precise location of our park
+          is hidden to protect our tenants and their businesses. Please
+          reach out to schedule a tour or learn more about our location.
+        </p>
+      </div> */}
+    </>
   );
 };
 

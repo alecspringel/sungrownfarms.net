@@ -9,18 +9,16 @@ const LandLeasesForYourBusiness = () => (
   <Section className="max-width mw-padding m-auto flex-row align-c section-p-t section-p-b">
     <SplitContent>
       <TitleDecoration>Land Leases for Your Business</TitleDecoration>
-      <div style={{ marginLeft: 25 }}>
-        <p className="m-t20 m-b20">
-          Sungrown Farms is a premier cannabis business park located in cannabis friendly Mason
-          County Washington. The park offers leases and services catered towards cannabis, a
-          great location, clean water, consistent power, and a secure community. The park is
-          home to multiple grows and sits on a X acre gated development. At Sungrown Farms,
-          we are here to help each of our tenants. We have full time staff available to help
-          acquire and transfer licenses to our park and assist with getting you off on the right
-          foot.
-        </p>
-        <Button to="/#" className="m-t4">View Available Licenses</Button>
-      </div>
+      <p className="m-t20 m-b20">
+        Sungrown Farms is a premier cannabis business park located in cannabis friendly Mason
+        County Washington. The park offers leases and services catered towards cannabis, a
+        great location, clean water, consistent power, and a secure community. The park is
+        home to multiple grows and sits on a X acre gated development. At Sungrown Farms,
+        we are here to help each of our tenants. We have full time staff available to help
+        acquire and transfer licenses to our park and assist with getting you off on the right
+        foot.
+      </p>
+      <Button to="/#" className="m-t4">View Available Licenses</Button>
     </SplitContent>
     <SplitContent>
       <Image src={SungrownJPG} alt="drone view of Sungrown Farms" />
@@ -39,6 +37,14 @@ const SplitContent = styled.div`
 
 const Image = styled.img`
   height: 100%;
+`;
+
+const RoundedPhoto = styled.img`
+  position: absolute;
+  height: 172px;
+  bottom: -46px;
+  left: -46px;
+  border-radius: 16px;
 `;
 
 const Section = styled.section`
@@ -74,14 +80,14 @@ const Section = styled.section`
       width: 100%;
     }
   }
-`;
 
-const RoundedPhoto = styled.img`
-  position: absolute;
-  height: 172px;
-  bottom: -46px;
-  left: -46px;
-  border-radius: 16px;
+  ${MEDIA_QUERY.PHONE} {
+    ${RoundedPhoto} {
+      height: 100px;
+      bottom: -37px;
+      left: -20px;
+    }
+  }
 `;
 
 const TitleDecoration = styled.h3`

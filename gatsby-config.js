@@ -24,8 +24,8 @@ module.exports = {
         name: 'Sungrown Farms',
         short_name: 'Sungrown Farms',
         start_url: '/',
-        background_color: '#fff',
-        theme_color: '#fff',
+        background_color: '#4C4C4C',
+        theme_color: '#4C4C4C',
         display: 'browser',
         icon: 'src/images/manifest/32x32.png', // This path is relative to the root of the site.
       },

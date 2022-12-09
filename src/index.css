@@ -70,7 +70,12 @@ button {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Aleo';
   font-weight: 400;
   margin: 0;
@@ -103,7 +108,7 @@ h6 {
 p {
   font-family: 'Roboto';
   font-size: 20px;
-  line-height: 115%;
+  line-height: 130%;
   margin: 0;
 }
 

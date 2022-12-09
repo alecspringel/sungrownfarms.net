@@ -23,8 +23,8 @@ const Footer = () => (
         </div>
         <div>
           <h6 className="text-bold m-b8">Contact Us</h6>
-          <SmallText className="m-b4">702-290-0858</SmallText>
-          <SmallText>help@sungrown.net</SmallText>
+          <SmallLink className="m-b4" href="tel:702-290-0858">+1 702 290-0858</SmallLink>
+          <SmallLink href="mailto:help@sungrownfarms.net">help@sungrownfarms.net</SmallLink>
         </div>
       </div>
     </FlexContainer>
@@ -35,6 +35,12 @@ export default Footer;
 
 const SmallText = styled.p`
   font-size: 15px;
+`;
+
+const SmallLink = styled.a`
+  font-size: 15px;
+  display: block;
+  font-family: "Roboto";
 `;
 
 const FlexContainer = styled.div`

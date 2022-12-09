@@ -23,6 +23,7 @@ const Container = styled.div`
   `
     : css`
     background-color: #F1EFEC;
+    border: 1px solid #F1EFEC;
     border-left: 9px solid #F1EFEC;
     :hover {
       background-color: #F7F6F4;

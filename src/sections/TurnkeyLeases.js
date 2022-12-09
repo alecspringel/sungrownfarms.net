@@ -8,7 +8,7 @@ import SungrownLotJPG from '../images/sungrown-lot.jpg';
 import { MEDIA_QUERY } from '../constants';
 
 const TurnkeyLeases = () => (
-  <section className="max-width m-auto text-center mw-padding" style={{ paddingBottom: 200 }}>
+  <section id="about" className="max-width m-auto text-center mw-padding" style={{ paddingBottom: 200 }}>
     <h2>Turnkey Leases for Cannabis</h2>
     <p style={{ maxWidth: 1000 }} className="m-t20 m-b20 m-auto">
       Our park offers uparalleled, turnkey leases with clean water, power,

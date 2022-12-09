@@ -7,7 +7,7 @@ import DryingPlantsJPG from '../images/drying-plants.jpg';
 const FAQ = () => {
   const [selectedQuestion, setSelectedQuestion] = useState(1);
   return (
-    <Section className="max-width m-auto flex-row align-c mw-padding section-p-b">
+    <Section id="faq" className="max-width m-auto flex-row align-c mw-padding section-p-b">
       <SplitContent>
         <h3 className="m-b20">Frequently Asked Questions</h3>
         <Question
@@ -20,19 +20,19 @@ const FAQ = () => {
           isActive={selectedQuestion === 2}
           onClick={() => setSelectedQuestion(2)}
         >
-          What lease durations does Sungrown Farms offer?
+          What is the largest tier grow you support?
         </Question>
         <Question
           isActive={selectedQuestion === 3}
           onClick={() => setSelectedQuestion(3)}
         >
-          What lease durations does Sungrown Farms offer?
+          How are utilities billed and paid for?
         </Question>
         <Question
           isActive={selectedQuestion === 4}
           onClick={() => setSelectedQuestion(4)}
         >
-          What lease durations does Sungrown Farms offer?
+          What are the benefits of industrial zoning?
         </Question>
         <div style={{ marginTop: 32 }}>
           <h4>Answer</h4>

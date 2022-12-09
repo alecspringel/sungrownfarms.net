@@ -6,7 +6,7 @@ import LocationSVG from '../images/landing-location.svg';
 
 const LandingVideo = () => (
   <VideoContainer>
-    <Video autoPlay loop muted>
+    <Video playsinline autoplay autobuffer loop muted>
       <source src={DroneVideo} type="video/mp4" />
       {/* <source src="movie.ogg" type="video/ogg" /> */}
       Your browser does not support the video tag.
@@ -16,11 +16,11 @@ const LandingVideo = () => (
         <FloatingContent>
           <h1 className="text-regular">Cannabis Land Leases and Licensing</h1>
           <img src={LocationSVG} className="m-t20 m-b20" alt="location icon titled: Olympia, Washington" style={{ maxWidth: '100%' }} />
-          <h5 className="text-regular" style={{ maxWidth: 500 }}>
+          <p className="text-regular" style={{ maxWidth: 500 }}>
             Sungrown Farms offers turnkey leases for cannabis growers and processors in
             Mason County, Washington. Our cannabis business park offers a space where
             like-minded businesses can grow together.
-          </h5>
+          </p>
         </FloatingContent>
       </TextContainer>
     </TextWrapper>
@@ -41,7 +41,7 @@ const VideoContainer = styled.section`
   position: relative;
   &:before {
     height: 100%;
-    background: linear-gradient(180deg,rgba(0,0,0,0.76) 0%,rgba(0,0,0,0.53) 71.87%,rgba(0,0,0,0.22) 100%);
+    background: rgb(0 0 0 / 70%);
     content: '';
     position: absolute;
     top: 0;

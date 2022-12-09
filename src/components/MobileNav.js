@@ -19,9 +19,9 @@ const MobileNav = ({ height, isClear }) => {
             <Options open={open} height={height} isClear={isClear}>
               <ul className="flex-col mw-padding p-t12">
                 <NavLink to="/#">Home</NavLink>
-                <NavLink to="/#About">About</NavLink>
-                <NavLink to="/#FAQ">FAQ</NavLink>
-                <NavLink to="/#Contact">Contact</NavLink>
+                <NavLink to="/#about">About</NavLink>
+                <NavLink to="/#faq">FAQ</NavLink>
+                <NavLink to="/#contact">Contact</NavLink>
               </ul>
             </Options>
           </Wrapper>
