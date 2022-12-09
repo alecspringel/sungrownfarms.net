@@ -14,7 +14,7 @@ export default Button;
 
 const ButtonLink = styled(Link)`
   display: inline-block;
-  font-family: "Roboto";
+  font-family: "Inter";
   padding: 10px 40px;
   border-radius: 21px;
   

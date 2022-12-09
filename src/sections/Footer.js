@@ -1,20 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MEDIA_QUERY } from '../constants';
-import SungrownLogoGray from '../images/sungrown-logo-gray.svg';
+import SungrownLogoSVG from '../images/sungrown-logo.svg';
 
 const Footer = () => (
-  <footer style={{ padding: 40 }}>
-    <FlexContainer className="max-width m-auto flex-row" style={{ justifyContent: 'space-around' }}>
-      <div className="text-center">
-        <img src={SungrownLogoGray} alt="Sungrown Farms logo" />
-        <p style={{ fontSize: 12 }} className="m-t8">
-          ©
-          {new Date().getFullYear()}
-          {' '}
-          Sungrown Farms
-        </p>
-      </div>
+  <footer style={{ padding: 40, background: '#4C4C4C', color: '#fff' }}>
+    <FlexContainer className="max-width m-auto flex-row">
+
       <div className="flex-row" style={{ justifyContent: 'space-around' }}>
         <div>
           <h6 className="text-bold m-b8">Address</h6>
@@ -23,9 +15,18 @@ const Footer = () => (
         </div>
         <div>
           <h6 className="text-bold m-b8">Contact Us</h6>
-          <SmallLink className="m-b4" href="tel:702-290-0858">+1 702 290-0858</SmallLink>
-          <SmallLink href="mailto:help@sungrownfarms.net">help@sungrownfarms.net</SmallLink>
+          <SmallLink className="m-b8" href="mailto:help@sungrownfarms.net" style={{ color: '#fff' }}>help@sungrownfarms.net</SmallLink>
+          <SmallLink href="tel:702-290-0858" style={{ color: '#fff' }}>+1 702 290-0858</SmallLink>
         </div>
+      </div>
+      <div className="text-left">
+        <img src={SungrownLogoSVG} alt="Sungrown Farms logo" />
+        <p style={{ fontSize: 12 }} className="m-t8">
+          ©
+          {new Date().getFullYear()}
+          {' '}
+          Sungrown Farms
+        </p>
       </div>
     </FlexContainer>
   </footer>
@@ -40,14 +41,17 @@ const SmallText = styled.p`
 const SmallLink = styled.a`
   font-size: 15px;
   display: block;
-  font-family: "Roboto";
+  font-family: "Inter";
 `;
 
 const FlexContainer = styled.div`
-  & > div:nth-child(1) {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+
+  & > div:nth-child(2) {
     flex: 1;
   }
-  & > div:nth-child(2) {
+  & > div:nth-child(1) {
     flex: 2;
   }
 
@@ -57,10 +61,18 @@ const FlexContainer = styled.div`
 
     & > div:nth-child(2) {
       text-align: center;
+    }
+
+    & > div:nth-child(1) {
+      text-align: center;
       width: 100%;
-      margin-bottom: 30px;
+      margin-top: 30px;
       flex-wrap: wrap;
       gap: 20px;
+    }
+
+    img {
+      height: 26px;
     }
   }
 `;

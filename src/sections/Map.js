@@ -1,6 +1,19 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
+const style = () => ({
+  styles: [
+    {
+      featureType: 'water',
+      stylers: [
+        {
+          color: '#AFD2E9',
+        },
+      ],
+    },
+  ],
+});
+
 const Map = () => {
   const sungrownLocation = {
     center: {
@@ -19,6 +32,7 @@ const Map = () => {
         <p style={{ fontSize: 18 }}>Where is your exact location?</p>
       </QuestionBox> */}
         <GoogleMapReact
+          options={style}
           yesIWantToUseGoogleMapApiInternals
           bootstrapURLKeys={{ key: 'AIzaSyCSDqYHgioyB18I2lCzlGX7XO8JtLhGuk8' }}
           defaultCenter={sungrownLocation.center}
