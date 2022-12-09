@@ -18,7 +18,7 @@ const Navigation = () => (
   <NavigationBar className="flex-row align-c">
     <NavigationContent className="m-auto flex-row align-c p-t8 p-b8 mw-padding">
       <img src={SungrownLogo} alt="Sungrown Farms logo" style={{ height: 36 }} />
-      <MobileNav height="168px" />
+      <MobileNav height="180px" />
       <DesktopNav />
 
     </NavigationContent>

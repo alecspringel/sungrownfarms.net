@@ -26,16 +26,20 @@ const Map = () => {
           onGoogleApiLoaded={({ map, maps }) => {
             map.controls[maps.ControlPosition.TOP_LEFT].push(document.getElementById('legend'));
             // eslint-disable-next-line no-new
-            new maps.Circle({
-              strokeColor: '#5D8F51',
-              strokeOpacity: 0.8,
-              strokeWeight: 2,
-              fillColor: '#5D8F51',
-              fillOpacity: 0.3,
+            new maps.Marker({
+              position: sungrownLocation.center,
               map,
-              center: { lat: sungrownLocation.center.lat, lng: sungrownLocation.center.lng },
-              radius: 10000,
             });
+            // new maps.Circle({
+            //   strokeColor: '#5D8F51',
+            //   strokeOpacity: 0.8,
+            //   strokeWeight: 2,
+            //   fillColor: '#5D8F51',
+            //   fillOpacity: 0.3,
+            //   map,
+            //   center: { lat: sungrownLocation.center.lat, lng: sungrownLocation.center.lng },
+            //   radius: 10000,
+            // });
           }}
         />
       </div>

@@ -7,7 +7,7 @@ import { MEDIA_QUERY } from '../constants';
 
 const ContactAndLocation = () => (
   <section id="contact" className="max-width m-auto text-center mw-padding" style={{ paddingBottom: 40 }}>
-    <h2>Contact and Location</h2>
+    <h3>Contact and Location</h3>
     <p style={{ maxWidth: 1000 }} className="m-t20 m-b20 m-auto">
       Sungrown Farms is located just south of lorem ipsum. Have questions about starting
       a lease with us? Reach out by phone or email.

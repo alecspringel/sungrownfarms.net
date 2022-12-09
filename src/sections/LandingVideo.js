@@ -6,7 +6,7 @@ import LocationSVG from '../images/landing-location.svg';
 
 const LandingVideo = () => (
   <VideoContainer>
-    <Video playsinline autoplay autobuffer loop muted>
+    <Video playsInline autoPlay loop muted>
       <source src={DroneVideo} type="video/mp4" />
       {/* <source src="movie.ogg" type="video/ogg" /> */}
       Your browser does not support the video tag.
@@ -41,7 +41,7 @@ const VideoContainer = styled.section`
   position: relative;
   &:before {
     height: 100%;
-    background: rgb(0 0 0 / 70%);
+    background: linear-gradient(0deg, #000000b5 0%, #000000a3 90%, #4C4C4C 100%);
     content: '';
     position: absolute;
     top: 0;

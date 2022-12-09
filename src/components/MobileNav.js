@@ -17,7 +17,7 @@ const MobileNav = ({ height, isClear }) => {
           <Wrapper>
             <MenuIcon src={HamburgerMenuSVG} />
             <Options open={open} height={height} isClear={isClear}>
-              <ul className="flex-col mw-padding p-t12">
+              <ul className="flex-col mw-padding p-t12 p-b12">
                 <NavLink to="/#">Home</NavLink>
                 <NavLink to="/#about">About</NavLink>
                 <NavLink to="/#faq">FAQ</NavLink>
