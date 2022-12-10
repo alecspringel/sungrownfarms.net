@@ -86,7 +86,7 @@ const ImageWithText = styled.div`
   align-content: flex-end;
 
   p {
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 20px;
   }
 `;

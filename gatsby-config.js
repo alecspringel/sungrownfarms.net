@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Sungrown Farms',
-    description: 'Land leases and licensing for cannabis farms in Washington state',
-    url: 'https://www.sungrownfarms.net',
-    image: '/sungrown-drone.jpg',
+    description: 'Land leases and licensing for cannabis businesses in Washington state',
+    url: 'http://sungrownfarms.com-dev.s3-website-us-west-2.amazonaws.com',
+    image: '/meta-img.jpg',
     author: '@alecspringel',
   },
   plugins: [
@@ -23,11 +23,12 @@ module.exports = {
       options: {
         name: 'Sungrown Farms',
         short_name: 'Sungrown Farms',
+        description: 'Land leases and licensing for cannabis businesses in Washington state',
         start_url: '/',
         background_color: '#4C4C4C',
         theme_color: '#4C4C4C',
         display: 'browser',
-        icon: 'src/images/manifest/32x32.png', // This path is relative to the root of the site.
+        icon: 'src/images/manifest/512x512.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-gatsby-cloud',

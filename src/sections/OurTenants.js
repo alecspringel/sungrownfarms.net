@@ -5,7 +5,7 @@ import PlantsJPG from '../images/wide-plants.jpg';
 import ScaleJPG from '../images/wide-scale.jpg';
 
 const OurTenants = () => (
-  <section style={{ background: '#F2EFEB', padding: '60px 0' }}>
+  <section style={{ background: '#F2EFEB', padding: '60px 0 30px 0' }}>
     <div className="max-width m-auto">
       <div className="mw-padding">
         <TitleDecoration className="m-b20">Our Tenants</TitleDecoration>
@@ -37,7 +37,7 @@ const OurTenants = () => (
       </div>
       <ImageWrapper>
         <ImageDiv img={PlantsJPG}>
-          <h4 className="text-bold m-b8">Producers, Growers & Cultivators</h4>
+          <h4 className="m-b20">Producers, Growers & Cultivators</h4>
           <p>
             Sungrown Farms provides leases for cannabis growers, producers, and cultivators,
             with ample land available for your license requirements. We are currently home to
@@ -47,7 +47,7 @@ const OurTenants = () => (
           </p>
         </ImageDiv>
         <ImageDiv img={ScaleJPG}>
-          <h4 className="text-bold m-b8">Processing</h4>
+          <h4 className="m-b20">Processing</h4>
           <p>
             Here at the park, we have tenants who process flower into oil and a variety of other
             products. We support both producer and processor licenses here, and are always available
@@ -102,10 +102,13 @@ const ImageDiv = styled.div`
   min-height: 256px;
   color: #F2EFEB;
   border-radius: 2px;
-  padding: 90px;
+  padding: 60px;
   padding-right: 30%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 21.92%, rgba(0, 0, 0, 0.55) 70.63%, rgba(0, 0, 0, 0) 103.25%), url(${(props) => props.img});
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 21.92%, rgba(0, 0, 0, 0.65) 70.63%, rgba(0, 0, 0, 0) 103.25%), url(${(props) => props.img});
   background-size: cover;
+  p {
+    font-size: 17px;
+  }
   ${MEDIA_QUERY.TABLET} {
     padding: 40px;
   }

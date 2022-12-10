@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MEDIA_QUERY } from '../constants';
-import SungrownLogoSVG from '../images/sungrown-logo.svg';
+import SungrownLogoSVG from '../images/sungrown-logo-gray.svg';
 
 const Footer = () => (
-  <footer style={{ padding: 40, background: '#4C4C4C', color: '#fff' }}>
+  <footer style={{ padding: 40, background: '#fff' }}>
     <FlexContainer className="max-width m-auto flex-row">
 
       <div className="flex-row" style={{ justifyContent: 'space-around' }}>
@@ -15,8 +15,8 @@ const Footer = () => (
         </div>
         <div>
           <h6 className="text-bold m-b8">Contact Us</h6>
-          <SmallLink className="m-b8" href="mailto:help@sungrownfarms.net" style={{ color: '#fff' }}>help@sungrownfarms.net</SmallLink>
-          <SmallLink href="tel:702-290-0858" style={{ color: '#fff' }}>+1 702 290-0858</SmallLink>
+          <SmallLink className="m-b8" href="mailto:help@sungrownfarms.net" style={{ color: 'var(--text-color)' }}>help@sungrownfarms.net</SmallLink>
+          <SmallLink href="tel:702-290-0858" style={{ color: 'var(--text-color)' }}>+1 702 290-0858</SmallLink>
         </div>
       </div>
       <div className="text-left">
