@@ -8,13 +8,15 @@ import SungrownLotJPG from '../images/sungrown-lot.jpg';
 import { MEDIA_QUERY } from '../constants';
 
 const TurnkeyLeases = () => (
-  <section id="about" className="max-width m-auto text-center mw-padding" style={{ paddingBottom: 200 }}>
-    <h2>Turnkey Leases for Cannabis</h2>
-    <p style={{ maxWidth: 1000 }} className="m-t20 m-b20 m-auto">
-      Our park offers uparalleled, turnkey leases with clean water, power,
-      security and more. Sungrown Farms offers a convenient location along I-5,
-      and is industrially zoned.
-    </p>
+  <Section id="about" className="max-width m-auto text-center mw-padding" style={{ paddingBottom: 200 }}>
+    <TextWrapper>
+      <h2>Turnkey Leases for Cannabis</h2>
+      <p style={{ maxWidth: 1000 }} className="m-t20 m-b20 m-auto">
+        Our park offers uparalleled, turnkey leases with clean water, power,
+        security and more. Sungrown Farms offers a convenient location along I-5,
+        and is industrially zoned.
+      </p>
+    </TextWrapper>
     <Button outline to="/#" style={{ marginBottom: 40 }}>
       FAQ
     </Button>
@@ -40,7 +42,7 @@ const TurnkeyLeases = () => (
       </ImageWithText>
       <ImageWithText img={MountainsJPG}>
         <div style={{ marginTop: 'auto', padding: 40 }}>
-          <h4>Convenient & Securely Located</h4>
+          <h4>Securely Located</h4>
           <p>
             We are a short drive from I-5 and South Puget Sound businesses,
             located within a gated property. We work with all of our tenants to provide security.
@@ -58,7 +60,7 @@ const TurnkeyLeases = () => (
         </div>
       </ImageWithText>
     </Grid>
-  </section>
+  </Section>
 );
 
 export default TurnkeyLeases;
@@ -86,5 +88,21 @@ const ImageWithText = styled.div`
   p {
     font-size: 18px;
     margin-top: 20px;
+  }
+`;
+
+const TextWrapper = styled.div``;
+
+const Section = styled.section`
+  ${MEDIA_QUERY.PHONE} {
+    padding: 0;
+
+    & ${Grid} > div {
+      text-align: center;
+    }
+
+    ${TextWrapper} {
+      padding: var(--max-width-padding);
+    }
   }
 `;

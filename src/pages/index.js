@@ -12,6 +12,7 @@ import Footer from '../sections/Footer';
 import '../index.css';
 import '../fonts.css';
 import '../devices.css';
+import OurTenants from '../sections/OurTenants';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <TurnkeyLeases />
       <OurPartnershipWithFarms />
       <FAQ />
+      <OurTenants />
       <ContactAndLocation />
       <Map />
       <Footer />
