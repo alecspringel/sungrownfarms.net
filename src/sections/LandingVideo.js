@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MEDIA_QUERY } from '../constants';
-import DroneVideo from '../images/drone-video.mp4';
+import DroneVideo from '../images/drone-video-optimized.mp4';
 import LocationSVG from '../images/landing-location.svg';
 
 const LandingVideo = () => (

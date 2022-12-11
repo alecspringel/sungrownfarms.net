@@ -8,7 +8,7 @@ import SungrownLotJPG from '../images/sungrown-lot.jpg';
 import { MEDIA_QUERY } from '../constants';
 
 const TurnkeyLeases = () => (
-  <Section id="about" className="max-width m-auto text-center mw-padding" style={{ paddingBottom: 200 }}>
+  <Section id="about" className="max-width m-auto text-center mw-padding" style={{ paddingTop: 100, paddingBottom: 200 }}>
     <TextWrapper>
       <h2>Turnkey Leases for Cannabis</h2>
       <p style={{ maxWidth: 1000 }} className="m-t20 m-b20 m-auto">
@@ -17,7 +17,7 @@ const TurnkeyLeases = () => (
         and is industrially zoned.
       </p>
     </TextWrapper>
-    <Button outline to="/#" style={{ marginBottom: 40 }}>
+    <Button outline to="/#faq" style={{ marginBottom: 40 }}>
       FAQ
     </Button>
     <Grid className="text-left">

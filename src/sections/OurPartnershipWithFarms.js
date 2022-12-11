@@ -6,7 +6,7 @@ import HandlingPlantsJPG from '../images/handling-plants.jpg';
 import LeafPNG from '../images/leaf.png';
 
 const OurPartnershipWithFarms = () => (
-  <Section className="max-width m-auto flex-row align-c mw-padding section-p-b">
+  <Section className="max-width m-auto flex-row align-c mw-padding">
     <SplitContent>
       <h3>Our Partnership with Farms</h3>
       <p className="m-t20 m-b20">
@@ -17,7 +17,7 @@ const OurPartnershipWithFarms = () => (
         seamless. Our team is available to help sell licenses, and get new or existing licenses
         transferred to Sungrown Farms.
       </p>
-      <Button to="/#" className="m-t4">Contact us for Availability</Button>
+      <Button to="/#contact" className="m-t4">Contact us for Availability</Button>
     </SplitContent>
     <SplitContent>
       <Image src={HandlingPlantsJPG} alt="person handling cannabis plants" />
@@ -45,6 +45,7 @@ const LeafImage = styled.img`
 
 const Section = styled.section`
   overflow: hidden;
+  padding-bottom: 100px;
 
   & ${SplitContent}:nth-child(1) {
     margin-right: 32px;

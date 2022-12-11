@@ -65,6 +65,7 @@ const Image = styled.img`
 
 const Section = styled.section`
   overflow: hidden;
+  padding-top: 100px;
 
   & ${SplitContent}:nth-child(1) {
     margin-right: 32px;

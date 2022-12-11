@@ -6,7 +6,7 @@ import Button from '../components/Button';
 import { MEDIA_QUERY } from '../constants';
 
 const LandLeasesForYourBusiness = () => (
-  <Section className="max-width mw-padding m-auto flex-row align-c section-p-t section-p-b">
+  <Section className="max-width mw-padding m-auto flex-row align-c section-p-t">
     <SplitContent>
       <TitleDecoration>Land Leases for Your Business</TitleDecoration>
       <p className="m-t20 m-b20">
@@ -18,7 +18,7 @@ const LandLeasesForYourBusiness = () => (
         acquire and transfer licenses to our park and assist with getting you off on the right
         foot.
       </p>
-      <Button to="/#" className="m-t4">View Available Licenses</Button>
+      <Button to="/licenses" className="m-t4">View Available Licenses</Button>
     </SplitContent>
     <SplitContent>
       <Image src={SungrownJPG} alt="drone view of Sungrown Farms" />
@@ -49,6 +49,7 @@ const RoundedPhoto = styled.img`
 
 const Section = styled.section`
   overflow: hidden;
+  padding-bottom: 100px;
 
   & ${SplitContent}:nth-child(2) {
     margin-left: 50px;

@@ -4,13 +4,14 @@ import styled from 'styled-components';
 import SungrownLogo from '../images/sungrown-logo.svg';
 import { MEDIA_QUERY } from '../constants';
 import MobileNav from '../components/MobileNav';
+import Button from '../components/Button';
 
 const DesktopNav = () => (
   <ul className="desktop-nav">
     <NavLink to="/#">Home</NavLink>
     <NavLink to="/#about">About</NavLink>
-    <NavLink to="/#faq">FAQ</NavLink>
-    <NavLink to="/#contact">Contact</NavLink>
+    <NavLink to="/#faq" style={{ paddingRight: 40 }}>FAQ</NavLink>
+    <Button small to="/#contact">Contact Us</Button>
   </ul>
 );
 
@@ -20,7 +21,6 @@ const Navigation = () => (
       <img src={SungrownLogo} alt="Sungrown Farms logo" style={{ height: 36 }} />
       <MobileNav height="180px" />
       <DesktopNav />
-
     </NavigationContent>
   </NavigationBar>
 );

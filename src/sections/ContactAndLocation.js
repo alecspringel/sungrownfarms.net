@@ -7,22 +7,23 @@ import { MEDIA_QUERY } from '../constants';
 import LocationSVG from '../images/location-marker.svg';
 
 const ContactAndLocation = () => (
-  <section id="contact" className="max-width m-auto text-center mw-padding" style={{ paddingTop: 100, paddingBottom: 60 }}>
+  <section id="contact" className="max-width m-auto text-center mw-padding" style={{ paddingTop: 70, paddingBottom: 60 }}>
     <img src={LocationSVG} alt="location marker icon" style={{ height: 36, marginBottom: 10 }} />
-    <h3>Contact and Location</h3>
+    <h3>Start Your Lease</h3>
     <p style={{ maxWidth: 1000 }} className="m-t20 m-b20 m-auto">
-      Sungrown Farms is located within a gated development in north Shelton, Washington.
-      Have questions about starting a lease with us? Reach out by phone or email.
+      Security is our number one priority at Sungrown Farms. Our location on the map is approximate.
+      If you would like to hear more about our location or have questions about starting a
+      lease with us, reach out to us by phone or email below.
     </p>
     <ButtonRow className="flex-row jstfy-c p-t16">
       <ButtonWrapper className="m-r8 text-right">
-        <Button outline className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
+        <Button outline href="tel:702-290-0858" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
           <img src={PhoneSVG} alt="phone icon" className="m-r8" />
           702-290-0858
         </Button>
       </ButtonWrapper>
       <ButtonWrapper className="m-l8 text-left">
-        <Button outline className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
+        <Button outline href="mailto:help@sungrownfarms.net" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
           <img src={EmailSVG} alt="email icon" className="m-r12" />
           hello@sungrown.net
         </Button>
