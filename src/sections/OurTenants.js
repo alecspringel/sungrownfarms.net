@@ -76,6 +76,9 @@ const FactsDiv = styled.div`
   ${MEDIA_QUERY.TABLET} {
     margin-top: 20px;
   }
+  @media only screen and (max-width: 300px) {
+    flex-direction: column;
+  }
 `;
 
 const TextWrapper = styled.div`

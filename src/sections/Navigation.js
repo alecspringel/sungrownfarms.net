@@ -18,7 +18,7 @@ const DesktopNav = () => (
 const Navigation = () => (
   <NavigationBar className="flex-row align-c">
     <NavigationContent className="m-auto flex-row align-c p-t8 p-b8 mw-padding">
-      <img src={SungrownLogo} alt="Sungrown Farms logo" style={{ height: 36 }} />
+      <img src={SungrownLogo} alt="Sungrown Farms logo" />
       <MobileNav height="180px" />
       <DesktopNav />
     </NavigationContent>
@@ -47,6 +47,23 @@ const NavigationContent = styled.div`
   width: 100%;
   justify-content: space-between;
   position: relative;
+
+  & > img {
+    height: 36px;
+    margin-right: 12px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    & > img {
+      height: 28px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    & > img {
+      display: none;
+    }
+  }
 `;
 
 const NavLink = styled(Link)`

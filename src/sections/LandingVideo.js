@@ -37,6 +37,7 @@ const FloatingContent = styled.div`
 const VideoContainer = styled.section`
   height: 100vh;
   max-height: 1440px;
+  min-height: 588px;
   width: 100%;
   position: relative;
   &:before {

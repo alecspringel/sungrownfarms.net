@@ -24,6 +24,7 @@ const styles = css`
   font-family: "Inter";
   padding: 10px 40px;
   border-radius: 21px;
+  text-align: center;
 
   ${(props) => props.small && css`
     padding: 8px 20px;

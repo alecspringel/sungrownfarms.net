@@ -36,6 +36,9 @@ export default MobileNav;
 const MenuIcon = styled.img`
   height: 30px;
   vertical-align: middle;
+  @media only screen and (max-width: 400px) {
+    height: 25px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -58,7 +61,7 @@ const Options = styled.div`
   transition: max-height 0ms ease-in-out;
   ${(props) => props.open
     && css`
-      background: #00000090;
+      background: #000000c2;
       transition: max-height 150ms ease-in-out;
       max-height: ${(props) => props.height};
       box-shadow: 2px 3px 3px #00000033;
