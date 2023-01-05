@@ -13,12 +13,13 @@ const LandLeasesForYourBusiness = () => (
         Sungrown Farms is a premier cannabis business park located in cannabis friendly Mason
         County Washington. The park offers leases and services catered towards cannabis, a
         great location, clean water, consistent power, and a secure community. The park is
-        home to multiple grows and sits on a X acre gated development. At Sungrown Farms,
-        we are here to help each of our tenants. We have full time staff available to help
-        acquire and transfer licenses to our park and assist with getting you off on the right
-        foot.
+        home to multiple grows and sits on more than 5 acres within a gated development.
+        At Sungrown Farms, we are here to help each of our tenants. We have full time staff
+        available to help acquire and transfer licenses to our park and assist with getting
+        you off on the right foot.
       </p>
-      <Button to="/licenses" className="m-t4">View Available Licenses</Button>
+      {/* <Button to="/licenses" className="m-t4">View Available Licenses</Button> */}
+      <Button to="/#contact" className="m-t4">Contact us for Availability</Button>
     </SplitContent>
     <SplitContent>
       <Image src={SungrownJPG} alt="drone view of Sungrown Farms" />

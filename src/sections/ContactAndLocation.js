@@ -17,15 +17,15 @@ const ContactAndLocation = () => (
     </p>
     <ButtonRow className="flex-row jstfy-c p-t16">
       <ButtonWrapper className="m-r8 text-right">
-        <Button outline href="tel:702-290-0858" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
+        <Button outline href="tel:360-789-3694" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
           <img src={PhoneSVG} alt="phone icon" className="m-r8" />
-          702-290-0858
+          (360) 789-3694
         </Button>
       </ButtonWrapper>
       <ButtonWrapper className="m-l8 text-left">
-        <Button outline href="mailto:help@sungrownfarms.net" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
+        <Button outline href="mailto:seanlkirby@msn.com" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
           <img src={EmailSVG} alt="email icon" className="m-r12" />
-          hello@sungrown.net
+          seanlkirby@msn.com
         </Button>
       </ButtonWrapper>
     </ButtonRow>

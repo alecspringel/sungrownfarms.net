@@ -15,8 +15,8 @@ const Footer = () => (
         </div>
         <div>
           <h6 className="text-bold m-b8">Contact Us</h6>
-          <SmallLink className="m-b8" href="mailto:help@sungrownfarms.net" style={{ color: 'var(--text-color)' }}>help@sungrownfarms.net</SmallLink>
-          <SmallLink href="tel:702-290-0858" style={{ color: 'var(--text-color)' }}>+1 702 290-0858</SmallLink>
+          <SmallLink className="m-b8" href="mailto:seanlkirby@msn.com" style={{ color: 'var(--text-color)' }}>seanlkirby@msn.com</SmallLink>
+          <SmallLink href="tel:360-789-3694" style={{ color: 'var(--text-color)' }}>+1 360 789-3694</SmallLink>
         </div>
       </div>
       <div className="text-left">

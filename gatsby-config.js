@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-s3',
       options: {
-        bucketName: process.env.DEPLOY_ENV === 'prod' ? 'sungrownfarms.com' : 'sungrownfarms.com-dev',
+        bucketName: process.env.DEPLOY_ENV === 'prod' ? 'sungrownfarms.net' : 'sungrownfarms.com-dev',
       },
     },
   ],

@@ -20,17 +20,17 @@ const OurTenants = () => (
           <FactsDiv>
             <FactWrapper>
               <FactNumber>
-                250,000 ft
+                250,000+ ft
                 <sup>2</sup>
               </FactNumber>
               <p>Total Property Size</p>
             </FactWrapper>
             <FactWrapper>
               <FactNumber>
-                15
+                3
                 <sup />
               </FactNumber>
-              <p>Tenants</p>
+              <p>Locations</p>
             </FactWrapper>
           </FactsDiv>
         </TextDiv>
