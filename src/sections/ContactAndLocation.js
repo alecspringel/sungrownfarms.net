@@ -23,9 +23,9 @@ const ContactAndLocation = () => (
         </Button>
       </ButtonWrapper>
       <ButtonWrapper className="m-l8 text-left">
-        <Button outline href="mailto:seanlkirby@msn.com" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
+        <Button outline href="mailto:sungrownfarmswa@gmail.com" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
           <img src={EmailSVG} alt="email icon" className="m-r12" />
-          seanlkirby@msn.com
+          sungrownfarmswa@gmail.com
         </Button>
       </ButtonWrapper>
     </ButtonRow>
