@@ -17,13 +17,13 @@ const ContactAndLocation = () => (
     </p>
     <ButtonRow className="flex-row jstfy-c p-t16">
       <ButtonWrapper className="m-r8 text-right">
-        <Button outline href="tel:360-789-3694" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
+        <Button outline href="tel:360-789-3694" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 300 }}>
           <img src={PhoneSVG} alt="phone icon" className="m-r8" />
           (360) 789-3694
         </Button>
       </ButtonWrapper>
       <ButtonWrapper className="m-l8 text-left">
-        <Button outline href="mailto:sungrownfarmswa@gmail.com" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 258 }}>
+        <Button outline href="mailto:sungrownfarmswa@gmail.com" className="align-c jstfy-c" style={{ display: 'inline-flex', width: 300 }}>
           <img src={EmailSVG} alt="email icon" className="m-r12" />
           sungrownfarmswa@gmail.com
         </Button>
@@ -33,7 +33,7 @@ const ContactAndLocation = () => (
 );
 export default ContactAndLocation;
 const ButtonRow = styled.div`
-  ${MEDIA_QUERY.PHONE} {
+  ${MEDIA_QUERY.TABLET} {
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -41,8 +41,9 @@ const ButtonRow = styled.div`
 `;
 const ButtonWrapper = styled.div`
   width: 50%;
-  ${MEDIA_QUERY.PHONE} {
+  ${MEDIA_QUERY.TABLET} {
     width: auto;
     margin: 0;
+    font-size: 15px;
   }
 `;
