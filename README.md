@@ -1,7 +1,3 @@
-# alecspringel.com
+# sungrownfarms.net
 
-Portfolio and contact site for Alec Springel - [alecspringel.com](https://alecspringel.com)
-
-Designed and created by Alec Springel: alecspringel@gmail.com
-
-![Hero section of alecspringel.com](docs/media/hero.png)
+Designed and created by Alec Springel: [alecspringel.com](https://alecspringel.com)
