@@ -1,50 +1,16 @@
-/* aleo-300 - latin */
+/* bricolage-grotesque - latin, variable 400-800 */
 @font-face {
-  font-family: 'Aleo';
+  font-family: 'Bricolage Grotesque';
   font-style: normal;
-  font-weight: 300;
-  src: local(''),
-       url('/fonts/aleo-v11-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/aleo-v11-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block;
+  font-weight: 400 800;
+  src: url('/fonts/bricolage-grotesque-latin-variable.woff2') format('woff2');
+  font-display: swap;
 }
-/* aleo-regular - latin */
+/* source-serif-4 - latin, variable 400-600 */
 @font-face {
-  font-family: 'Aleo';
+  font-family: 'Source Serif 4';
   font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('/fonts/aleo-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/aleo-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block;
-}
-/* aleo-700 - latin */
-@font-face {
-  font-family: 'Aleo';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('/fonts/aleo-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/aleo-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block;
-}
-/* inter-regular - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('/fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block;
-}
-/* inter-600 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  src: local(''),
-       url('/fonts/inter-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/inter-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: block;
+  font-weight: 400 600;
+  src: url('/fonts/source-serif-4-latin-variable.woff2') format('woff2');
+  font-display: swap;
 }

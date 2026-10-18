@@ -1,13 +1,32 @@
 import React from 'react';
+import styled from 'styled-components';
 import Button from '../components/Button';
-import SungrownFarmsLogo from '../images/sungrown-logo-gray.svg';
+import Navigation from '../sections/Navigation';
+import Footer from '../sections/Footer';
+import SEO from '../sections/seo';
+import '../index.css';
+import '../fonts.css';
 
 const Page404 = () => (
-  <div className="text-center section-p-t mw-padding">
-    <img alt="sungrown farms logo" src={SungrownFarmsLogo} style={{ maxWidth: '100%' }} />
-    <p className="m-b20 m-t16">Uh oh! The page you&apos;re looking for doesn&apos;t exist.</p>
-    <Button to="/" style={{ marginTop: 40 }}>Back to Home</Button>
-  </div>
+  <>
+    <SEO title="Page not found | Sungrown Farms" />
+    <Navigation />
+    <Main className="band g">
+      <p className="eyebrow">404</p>
+      <h1 className="h2">We couldn&apos;t find that page.</h1>
+      <p className="lead">The link may be old, or the page may have moved.</p>
+      <Button to="/" $variant="dark">Back to home</Button>
+    </Main>
+    <Footer />
+  </>
 );
 
 export default Page404;
+
+const Main = styled.main`
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+`;
