@@ -1,32 +1,33 @@
 import React from 'react';
 import Navigation from '../sections/Navigation';
 import SEO from '../sections/seo';
-import LandingVideo from '../sections/LandingVideo';
-import LandLeasesForYourBusiness from '../sections/LandLeasesForYourBusiness';
-import TurnkeyLeases from '../sections/TurnkeyLeases';
-import OurPartnershipWithFarms from '../sections/OurPartnershipWithFarms';
+import Hero from '../sections/Hero';
+import ThePark from '../sections/ThePark';
+import Infrastructure from '../sections/Infrastructure';
+import OurTenants from '../sections/OurTenants';
+import Process from '../sections/Process';
 import FAQ from '../sections/FAQ';
-import ContactAndLocation from '../sections/ContactAndLocation';
-import Map from '../sections/Map';
+import Location from '../sections/Location';
+import Contact from '../sections/Contact';
 import Footer from '../sections/Footer';
 import '../index.css';
 import '../fonts.css';
-import '../devices.css';
-import OurTenants from '../sections/OurTenants';
 
 export default function Home() {
   return (
     <>
       <SEO />
       <Navigation />
-      <LandingVideo />
-      <LandLeasesForYourBusiness />
-      <TurnkeyLeases />
-      <OurPartnershipWithFarms />
-      <FAQ />
-      <OurTenants />
-      <ContactAndLocation />
-      <Map />
+      <main>
+        <Hero />
+        <ThePark />
+        <Infrastructure />
+        <OurTenants />
+        <Process />
+        <FAQ />
+        <Location />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

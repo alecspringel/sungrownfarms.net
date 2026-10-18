@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Sungrown Farms',
     description: 'Land leases and licensing for cannabis businesses in Washington state',
-    url: 'http://sungrownfarms.com-dev.s3-website-us-west-2.amazonaws.com',
+    url: 'https://sungrownfarms.net',
     image: '/meta-img.jpg',
     author: '@alecspringel',
   },
@@ -25,8 +25,8 @@ module.exports = {
         short_name: 'Sungrown Farms',
         description: 'Land leases and licensing for cannabis businesses in Washington state',
         start_url: '/',
-        background_color: '#4C4C4C',
-        theme_color: '#4C4C4C',
+        background_color: '#173326',
+        theme_color: '#173326',
         display: 'browser',
         icon: 'src/images/manifest/512x512.png', // This path is relative to the root of the site.
       },

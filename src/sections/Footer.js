@@ -1,78 +1,111 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MEDIA_QUERY } from '../constants';
-import SungrownLogoSVG from '../images/sungrown-logo-gray.svg';
+import { CONTACT, NAV_LINKS } from '../constants';
+import SungrownLogo from '../images/sungrown-logo.svg';
 
 const Footer = () => (
-  <footer style={{ padding: 40, background: '#fff' }}>
-    <FlexContainer className="max-width m-auto flex-row">
-
-      <div className="flex-row" style={{ justifyContent: 'space-around' }}>
+  <StyledFooter className="g">
+    <Top>
+      <div>
+        <img src={SungrownLogo} alt="Sungrown Farms" width="216" />
+        <p>Turnkey cannabis land leases and licensing support in Mason County, Washington.</p>
+      </div>
+      <Columns>
         <div>
-          <h6 className="text-bold m-b8">Address</h6>
-          <SmallText className="m-b4">Mason County</SmallText>
-          <SmallText>Shelton, Washington</SmallText>
+          <h4>Park</h4>
+          <ul>
+            {NAV_LINKS.filter(({ label }) => label !== 'FAQ').map(({ href, label }) => (
+              <li key={href}><a href={href}>{label}</a></li>
+            ))}
+          </ul>
         </div>
         <div>
-          <h6 className="text-bold m-b8">Contact Us</h6>
-          <SmallLink className="m-b8" href="mailto:sungrownfarmswa@gmail.com" style={{ color: 'var(--text-color)' }}>sungrownfarmswa@gmail.com</SmallLink>
-          <SmallLink href="tel:360-789-3694" style={{ color: 'var(--text-color)' }}>+1 360 789-3694</SmallLink>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href={CONTACT.PHONE_HREF}>{CONTACT.PHONE}</a></li>
+            <li><a href={`mailto:${CONTACT.EMAIL}`}>{CONTACT.EMAIL}</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
         </div>
-      </div>
-      <div className="text-left">
-        <img src={SungrownLogoSVG} alt="Sungrown Farms logo" />
-        <p style={{ fontSize: 12 }} className="m-t8">
-          ©
-          {new Date().getFullYear()}
-          {' '}
-          Sungrown Farms
-        </p>
-      </div>
-    </FlexContainer>
-  </footer>
+      </Columns>
+    </Top>
+    <Bottom>
+      <span>
+        {`© ${new Date().getFullYear()} Sungrown Farms · Site by `}
+        <a href="https://pacificweb.design">Pacific Web Design</a>
+      </span>
+      <span>
+        Flowering plant photo by Cannabis Tours,
+        {' '}
+        <a href="https://commons.wikimedia.org/wiki/File:Cannabis_flowering_in_a_greenhouse.jpg">CC BY-SA 4.0</a>
+        . Map data ©
+        {' '}
+        <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>
+        .
+      </span>
+    </Bottom>
+  </StyledFooter>
 );
 
 export default Footer;
 
-const SmallText = styled.p`
-  font-size: 15px;
+const StyledFooter = styled.footer`
+  background: var(--deep);
+  color: var(--soft);
+  padding-top: 48px;
+  padding-bottom: 40px;
+  font: 400 14.5px/1.6 var(--display);
 `;
 
-const SmallLink = styled.a`
-  font-size: 15px;
-  display: block;
-  font-family: "Inter";
+const Top = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 28px 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(242, 243, 236, 0.1);
+
+  p {
+    margin-top: 14px;
+    max-width: 36ch;
+  }
 `;
 
-const FlexContainer = styled.div`
-  flex-direction: row-reverse;
-  justify-content: space-around;
+const Columns = styled.div`
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
 
-  & > div:nth-child(2) {
-    flex: 1;
+  h4 {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+    margin-bottom: 12px;
   }
-  & > div:nth-child(1) {
-    flex: 2;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 6px;
   }
+  a:hover {
+    color: var(--cream);
+  }
+`;
 
-  ${MEDIA_QUERY.TABLET} {
-    flex-direction: column-reverse;
-    align-items: center;
+const Bottom = styled.div`
+  padding-top: 24px;
+  font-size: 12.5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px 32px;
+  flex-wrap: wrap;
 
-    & > div:nth-child(2) {
-      text-align: center;
-    }
-
-    & > div:nth-child(1) {
-      text-align: center;
-      width: 100%;
-      margin-top: 30px;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    img {
-      height: 26px;
-    }
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 `;
