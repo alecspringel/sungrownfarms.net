@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Sungrown Farms',
     description: 'Land leases and licensing for cannabis businesses in Washington state',
-    url: 'http://sungrownfarms.com-dev.s3-website-us-west-2.amazonaws.com',
+    url: 'https://sungrownfarms.net',
     image: '/meta-img.jpg',
     author: '@alecspringel',
   },
