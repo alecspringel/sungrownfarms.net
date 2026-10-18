@@ -30,7 +30,10 @@ const Footer = () => (
       </Columns>
     </Top>
     <Bottom>
-      <span>{`© ${new Date().getFullYear()} Sungrown Farms`}</span>
+      <span>
+        {`© ${new Date().getFullYear()} Sungrown Farms · Site by `}
+        <a href="https://pacificweb.design">Pacific Web Design</a>
+      </span>
       <span>
         Flowering plant photo by Cannabis Tours,
         {' '}
