@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <NavigationBar>
       <Row className="g">
-        <a href="/#top" aria-label="Sungrown Farms home" onClick={close}>
+        <a href="/#" aria-label="Sungrown Farms home" onClick={close}>
           <Logo src={SungrownLogo} alt="Sungrown Farms" />
         </a>
         <DesktopLinks aria-label="Main">

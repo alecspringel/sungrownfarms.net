@@ -36,11 +36,6 @@ const Hero = () => {
     <Section id="top">
       <Grid className="g">
         <Copy>
-          <Chips>
-            <span>Tier 1–3 producers</span>
-            <span>Processors</span>
-            <span>License transfers</span>
-          </Chips>
           <Title>
             Lease-ready land for
             {' '}
@@ -133,26 +128,11 @@ const Copy = styled.div`
   }
 `;
 
-const Chips = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-
-  span {
-    font: 500 13px/1 var(--display);
-    border: 1px solid rgba(242, 243, 236, 0.28);
-    padding: 8px 12px;
-    border-radius: 99px;
-    color: var(--soft);
-  }
-`;
-
 const Title = styled.h1`
   font-weight: 800;
   font-size: clamp(44px, 5.6vw, 84px);
   line-height: 0.98;
   letter-spacing: -0.03em;
-  margin-top: 26px;
 
   span {
     color: var(--sun);
